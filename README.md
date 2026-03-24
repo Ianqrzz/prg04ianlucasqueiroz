@@ -26,28 +26,28 @@ prg04ianlucasqueiroz/
 ├── README.md                          # Documentação do projeto
 ├── .git/                              # Repositório Git
 │
-└── estrutura/
-    └── infraestructure/               # Arquivos da infraestrutura web
-        ├── index.html                 # Página principal da aplicação
-        ├── css/                       # Folhas de estilo
-        │   └── global/                # Estilos globais da aplicação
-        ├── js/                        # Scripts JavaScript
-        ├── fonts/                     # Fontes personalizadas
-        ├── images/                    # Imagens e assets
-        └── pages/                     # Páginas adicionais
-            └── about/                 # Página sobre o projeto
-                └── contact/           # Página de contato
+└── infraestructure/                   # Arquivos da infraestrutura web
+    ├── index.html                     # Página principal da aplicação
+    ├── css/                           # Folhas de estilo
+    │   └── global/                    # Estilos globais da aplicação
+    ├── js/                            # Scripts JavaScript
+    ├── fonts/                         # Fontes personalizadas
+    ├── images/                        # Imagens e assets
+    └── pages/                         # Páginas adicionais
+        ├── about/                     # Página sobre o projeto
+        └── contact/                   # Página de contato
 ```
 
 ### 📝 Descrição das Pastas
 
 | Pasta | Descrição |
 |-------|-----------|
+| **infraestructure/** | Diretório raiz que contém todos os arquivos da aplicação web |
 | **css/** | Contém todas as folhas de estilo CSS do projeto. A pasta `global/` armazena os estilos que se aplicam à toda a aplicação |
 | **js/** | Armazena os arquivos JavaScript que implementam a lógica interativa e funcionalidade da aplicação |
 | **fonts/** | Contém as fontes personalizadas utilizadas no design da interface |
 | **images/** | Repositório para imagens, ícones e outros assets visuais utilizados no projeto |
-| **pages/** | Estrutura de páginas adicionais. Atualmente contém a página `about/` com a subpágina de `contact/` |
+| **pages/** | Estrutura de páginas adicionais. Contém as páginas `about/` e `contact/` |
 
 ## 👨‍💻 Autor
 

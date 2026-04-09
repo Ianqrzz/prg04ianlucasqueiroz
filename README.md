@@ -2,9 +2,7 @@
 
 <div align="center">
 
-## Expense Tracker
-
-
+## E-commerce 074 diversão
 
 </div>
 
@@ -12,7 +10,7 @@
 
 ## 📋 Sobre o Projeto
 
-**Expense Tracker(wip)** é uma aplicação web desenvolvida como projeto individual para a disciplina de programação web. O objetivo é criar uma ferramenta intuitiva para rastrear e gerenciar despesas pessoais.
+**E-commerce 074 diversão** é uma plataforma de comércio eletrônico desenvolvida como projeto individual para a disciplina de programação web. O objetivo é criar uma loja online intuitiva e responsiva para venda de produtos de entretenimento e diversão, com uma experiência de compra agradável e segura.
 
 ---
 

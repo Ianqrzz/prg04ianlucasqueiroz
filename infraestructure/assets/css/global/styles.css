@@ -1,28 +1,56 @@
-body{
+:root{
+    --cor-primaria: #3260E1;
+    --cor-analoga1: #35A2E6;
+    --cor-analoga2: #10B981;
+    --cor-complementar: #EB5A0C;
+    --cor-fundo: #F8FAFC;
 
-    background-color: black;
-    font-family: sans-serif;
 }
 
+
+
+.resposive-banner{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    font-family: sans-serif;
+    color:#334155
+}
+
+header{
+    display: flex;
+    align-items: center;
+    background-color: var(--cor-primaria);
+}
+
+.logo-container{
+    width: 100px;
+    height: auto;
+    margin-left: 15px;
+}
+
+nav{
+    height: 1000;
+}
 p{
-    color:white;
     text-align: center;
 }
 
 
 h1{
-    color:white;
     text-align: center;
 }
 
 h2{
-    color:white;
     text-align: center;
 
 }
 
 li{
-    color:white;
     text-align: center;
 
 }

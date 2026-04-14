@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="\infraestructure\assets\css\global\styles.css">
+
+</head>
+<body>
+
+    <main class="container">
+        <div>
+            <form id="loginForm">
+                <h1>Login</h>
+                <div class="input-box">
+                    <input type="text" name="nome"  id="nome" placeholder="Nome de usuario">
+                </div>
+                <div class="input-box">
+                    <input  type="email" name="email" id="email" placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <input type="password" name="Senha" id="senha" placeholder="Senha">
+                </div>
+
+                <div>
+                    <label>
+                        <input type="checkbox">
+                    </label>
+                    <a href="#">esqueci minha senha</a>
+                </div>
+
+                <p id="erro" style="color: red; display: none;">Usuário ou senha incorretos.</p>
+
+                <div class="input-button">
+                    <input type="submit" value="login">
+                </div>
+                
+                <div>
+                    <p>registrar conta <a href="#">cadastrar-se</a></p>
+                </div>
+                
+            </form>
+        </div>
+    
+
+        <script>
+
+        const USUARIO_VALIDO = "admin";
+        const EMAIL_VALIDO   = "admin@email.com";
+        const SENHA_VALIDA   = "1234";
+
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+
+            const nome  = document.getElementById("nome").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const senha = document.getElementById("senha").value;
+            const erro  = document.getElementById("erro");
+
+            // Validação
+            if (nome === USUARIO_VALIDO && email === EMAIL_VALIDO && senha === SENHA_VALIDA) {
+                erro.style.display = "none";
+                window.location.href = "painel-adm.html"; 
+            } else {
+                erro.style.display = "block";
+            }
+        });
+    </script>
+    </main>
+</body>
+</html>

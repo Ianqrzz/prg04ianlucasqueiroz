@@ -14,32 +14,37 @@
 
 nav#menu{
    display: flex;
-   justify-content: space-between;
-   padding: 1.5rem 2rem;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 1rem 1rem;
    width: 100%;
    box-sizing: border-box;
    flex-wrap: wrap;
+   gap: 1rem;
 }
 
 nav#menu ul{
     list-style: none;
     text-transform: uppercase;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     display: flex;
-    padding: 10px;
+    padding: 5px;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 3px;
+    width: 100%;
 }
 
 nav#menu li{
     display: inline-block;
     background-color: var(--cor-analoga1);
-    padding: 8px 10px;
-    margin: 2px;
+    padding: 6px 8px;
+    margin: 1px;
     transition: background-color 1s;
-    letter-spacing: 2px;
-    margin-left: 8px;
+    letter-spacing: 1px;
+    margin-left: 3px;
+    font-size: 0.85rem;
 }
 
 nav#menu li:hover{
@@ -48,7 +53,7 @@ nav#menu li:hover{
 
 nav#menu a{
     color: black;
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-decoration:none;
     align-items: center;
     display: inline-block;
@@ -58,9 +63,10 @@ header#headbar{
     max-width: 100%;
     width: 100%;
     display: flex;
-    height: 20vh;
+    flex-direction: column;
+    height: 15vh;
     background-color: var(--cor-analoga1);
-
+    justify-content: center;
 }
 
 table#tabelspec{
@@ -69,19 +75,20 @@ table#tabelspec{
     margin-left: auto;
     margin-right: auto;
     border-collapse: collapse;
+    width: 95%;
 }
 
 table#tabelspec td{
     border-top: 1px solid;
     border-bottom: 1px solid;
-    padding: 10px;
+    padding: 8px;
     text-align: center;
-    font-size: medium;
+    font-size: 0.85rem;
 }
 
 table#tabelspec thead{
     background-color: #1648d1;
-    font-size: large;
+    font-size: 1rem;
 }
 
 
@@ -98,10 +105,15 @@ table#tabelspec thead{
     align-items: center;
 }
 
+.logo h1{
+    font-size: 1.2rem;
+    margin: 0;
+}
+
 .login-button button{
     border: none;
     background-color: var(--cor-analoga1);
-    padding: 10px 15px  ;
+    padding: 8px 12px;
     border-radius: 5px ;
 }
 
@@ -109,58 +121,60 @@ body{
     background-color: var(--cor-fundo);
     font-family: "Ubuntu", sans-serif;
     color:#334155;
-    margin: 0;
-    padding: 0;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
 
 main{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 100%;
     width: 100%;
     box-sizing: border-box;
+    flex: 1;
 }
 
 .container{
-    width: 420px;
+    width: 90%;
+    max-width: 320px;
     height: 100%;
     background-color: transparent;
     border: 2px solid;
     border-radius: 10px;
-    font-size: small;
-    padding: 30px 40px;
+    font-size: 0.9rem;
+    padding: 20px 25px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .container h1{
-    font-size: 30px;
+    font-size: 1.5rem;
     text-align: center;
 }
 
 .input-box{
-    position:relative
+    position: relative;
     width: 100%;
-    height: 50px;
-    margin: 30px 0;
+    height: 45px;
+    margin: 20px 0;
 }
 
 .input-box input{
     width: 100%;
     height: 100%;
-    font-size: 16px;
+    font-size: 14px;
     border-radius: 20px;
 }
 
 .input-button input{
     width: 100%;
-    height: 50px;
+    height: 45px;
     border-radius: 20px;
-    font-size: 16px;
+    font-size: 14px;
     background-color: var(--cor-primaria);
     border: solid 2px;
 }
@@ -184,4 +198,197 @@ main{
               -4px -4px 6px 0 rgba(116, 125, 136, .5), 
     inset -4px -4px 6px 0 rgba(255,255,255,.2),
     inset 4px 4px 6px 0 rgba(0, 0, 0, .4)
+}
+
+footer{
+    width: 100%;
+    padding: 1.5rem 1rem;
+    background-color: var(--cor-primaria);
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    box-sizing: border-box;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    margin: 0.5rem;
+    display: block;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+footer a:hover{
+    color: var(--cor-complementar);
+}
+
+/* ========== MEDIA QUERIES - MOBILE FIRST ========== */
+
+/* TABLETS - 601px and above */
+@media (min-width: 601px) {
+    nav#menu {
+        flex-direction: row;
+        padding: 1.2rem 1.5rem;
+        justify-content: space-between;
+    }
+
+    nav#menu ul {
+        justify-content: center;
+        gap: 8px;
+        padding: 8px;
+        width: auto;
+    }
+
+    nav#menu li {
+        padding: 8px 12px;
+        margin: 3px;
+        font-size: 0.95rem;
+        letter-spacing: 1.5px;
+        margin-left: 0;
+    }
+
+    nav#menu a {
+        font-size: 0.95rem;
+    }
+
+    header#headbar {
+        height: 18vh;
+        flex-direction: row;
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .login-button button {
+        padding: 10px 14px;
+    }
+
+    .container {
+        width: 85%;
+        max-width: 400px;
+        padding: 25px 35px;
+        font-size: 0.95rem;
+    }
+
+    .container h1 {
+        font-size: 1.8rem;
+    }
+
+    .input-box {
+        height: 48px;
+        margin: 25px 0;
+    }
+
+    .input-box input {
+        font-size: 15px;
+    }
+
+    .input-button input {
+        height: 48px;
+        font-size: 15px;
+    }
+
+    table#tabelspec {
+        width: 90%;
+    }
+
+    table#tabelspec td {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+
+    footer {
+        padding: 2rem 1.5rem;
+    }
+
+    footer a {
+        margin: 0 1rem;
+        display: inline-block;
+        font-size: 0.95rem;
+    }
+}
+
+/* DESKTOPS - 1025px and above */
+@media (min-width: 1025px) {
+    nav#menu {
+        flex-direction: row;
+        padding: 1.5rem 2rem;
+        justify-content: space-between;
+    }
+
+    nav#menu ul {
+        justify-content: flex-end;
+        gap: 5px;
+        padding: 10px;
+        width: auto;
+    }
+
+    nav#menu li {
+        padding: 8px 10px;
+        margin: 2px;
+        font-size: 1rem;
+        letter-spacing: 2px;
+        margin-left: 8px;
+    }
+
+    nav#menu a {
+        font-size: 1rem;
+    }
+
+    header#headbar {
+        height: 20vh;
+    }
+
+    .logo h1 {
+        font-size: 1.8rem;
+    }
+
+    .login-button button {
+        padding: 10px 15px;
+    }
+
+    .container {
+        width: 420px;
+        padding: 30px 40px;
+        font-size: 1rem;
+    }
+
+    .container h1 {
+        font-size: 2rem;
+    }
+
+    .input-box {
+        height: 50px;
+        margin: 30px 0;
+    }
+
+    .input-box input {
+        font-size: 16px;
+    }
+
+    .input-button input {
+        height: 50px;
+        font-size: 16px;
+    }
+
+    table#tabelspec {
+        width: 100%;
+    }
+
+    table#tabelspec td {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: 2rem;
+    }
+
+    footer a {
+        margin: 0 1rem;
+        display: inline-block;
+        font-size: 1rem;
+    }
 }
